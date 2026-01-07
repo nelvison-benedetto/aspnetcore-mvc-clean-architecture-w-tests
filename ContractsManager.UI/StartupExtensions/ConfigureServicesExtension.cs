@@ -1,4 +1,12 @@
-﻿namespace ContractsManager.UI.StartupExtensions;
+﻿using ContractsManager.Core.Domain.RepositoryContracts;
+using ContractsManager.Core.Services;
+using ContractsManager.Core.ServicesContracts;
+using ContractsManager.Infrastructure.DbContext;
+using ContractsManager.Infrastructure.Repositories;
+using ContractsManager.UI.Filters.ActionFilters;
+using Microsoft.EntityFrameworkCore;
+
+namespace ContractsManager.UI.StartupExtensions;
 
 public static class ConfigureServicesExtension
 {

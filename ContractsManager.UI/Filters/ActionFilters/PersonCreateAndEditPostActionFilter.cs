@@ -1,4 +1,6 @@
-﻿using ContractsManager.UI.Controllers;
+﻿using ContractsManager.Core.DTO;
+using ContractsManager.Core.ServicesContracts;
+using ContractsManager.UI.Controllers;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.Rendering;
 

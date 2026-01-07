@@ -8,9 +8,11 @@ using System.Xml.Linq;
 
 namespace ContractsManager.Core.DTO;
 
+/// <summary>
+/// Acts as a DTO for inserting a new person
+/// </summary>
 public class PersonAddRequest
 {
-
     [Required(ErrorMessage = "Person Name can't be blank")]
     public string? PersonName { get; set; }
 

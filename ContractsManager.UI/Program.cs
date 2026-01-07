@@ -1,5 +1,9 @@
 
 
+using ContractsManager.UI.Middleware;
+using ContractsManager.UI.StartupExtensions;
+using Serilog;
+
 var builder = WebApplication.CreateBuilder(args);
 
 //Serilog

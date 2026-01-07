@@ -8,9 +8,11 @@ using System.Xml.Linq;
 
 namespace ContractsManager.Core.DTO;
 
+/// <summary>
+/// Represents the DTO class that contains the person details to update
+/// </summary>
 public class PersonUpdateRequest
 {
-
     [Required(ErrorMessage = "Person ID can't be blank")]
     public Guid PersonID { get; set; }
 

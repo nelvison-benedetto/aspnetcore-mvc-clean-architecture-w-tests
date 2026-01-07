@@ -1,4 +1,6 @@
-﻿namespace ContractsManager.UI.Middleware;
+﻿using Serilog;
+
+namespace ContractsManager.UI.Middleware;
 
 // You may need to install the Microsoft.AspNetCore.Http.Abstractions package into your project
 public class ExceptionHandlingMiddleware

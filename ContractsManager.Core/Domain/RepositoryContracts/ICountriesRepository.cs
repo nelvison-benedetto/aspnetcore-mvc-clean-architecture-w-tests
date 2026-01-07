@@ -5,6 +5,9 @@ using System.Text;
 
 namespace ContractsManager.Core.Domain.RepositoryContracts;
 
+/// <summary>
+/// Represents data access logic for managing Person entity
+/// </summary>
 public interface ICountriesRepository
 {
     /// <summary>

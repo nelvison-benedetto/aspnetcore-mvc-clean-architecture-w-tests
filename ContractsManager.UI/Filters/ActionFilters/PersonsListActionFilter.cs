@@ -1,4 +1,6 @@
-﻿using ContractsManager.UI.Controllers;
+﻿using ContractsManager.Core.DTO;
+using ContractsManager.Core.Enums;
+using ContractsManager.UI.Controllers;
 using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace ContractsManager.UI.Filters.ActionFilters;

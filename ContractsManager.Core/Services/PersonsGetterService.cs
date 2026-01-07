@@ -7,6 +7,7 @@ using CsvHelper.Configuration;
 using Microsoft.Extensions.Logging;
 using OfficeOpenXml;
 using Serilog;
+using SerilogTimings;
 using System;
 using System.Collections.Generic;
 using System.Formats.Asn1;

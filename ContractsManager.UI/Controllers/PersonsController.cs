@@ -1,5 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ContractsManager.Core.DTO;
+using ContractsManager.Core.Enums;
+using ContractsManager.Core.ServicesContracts;
+using ContractsManager.UI.Filters;
+using ContractsManager.UI.Filters.ActionFilters;
+using ContractsManager.UI.Filters.AuthorizationFilter;
+using ContractsManager.UI.Filters.ResourceFilters;
+using ContractsManager.UI.Filters.ResultFilters;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Rotativa.AspNetCore;
 
 namespace ContractsManager.UI.Controllers;
 
