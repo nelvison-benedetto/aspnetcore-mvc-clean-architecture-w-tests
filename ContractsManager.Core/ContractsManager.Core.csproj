@@ -10,6 +10,7 @@
     <PackageReference Include="CsvHelper" Version="33.1.0" />
 	  <!--leggere/scrivere file .csv, mapping auto w objs c#, standart-de-facto x file .csv in .net-->
     <PackageReference Include="EPPlus" Version="8.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
 	  <!--creare/leggere file Excel (.xlsx), formattazione celle fogli formule-->
     <PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="2.3.0" />
 	  <!--validazioni w data annotations e.g. [Required], [MaxLength], [Range]-->
