@@ -8,23 +8,25 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Rotativa\" />
-	  <!--folder per asset statici di Rotativa, quindi x template html css x pdf. ha senso se generi .pdf files-->
+	  <!--!!folder per asset statici (css/img/html) usati da Rotativa per generare PDF; utile se i PDF referenziano risorse statiche-->
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.8" />
+	  
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-	  <!--x migrazioni scaffolding Add-Migration Update-Database. setti PrivateAssets=all cosi NON finisce in produzione, solo tool di sviluppo, è una best practice!!-->
+	  <!--!!x migrazioni scaffolding Add-Migration Update-Database. setti PrivateAssets=all cosi NON finisce in produzione, solo tool di sviluppo, è una best practice!!-->
+	  
     <PackageReference Include="Rotativa.AspNetCore" Version="1.4.0" /> 
-	  <!--x generare files .PDF da HTML, usa usa wkhtmltopdf(è un binario esterno, quindi attention a docker hosting ect)-->
+	  <!--genera PDF da HTML usando wkhtmltopdf (binario esterno). Attenzione a Docker, Linux hosting e permessi di esecuzione; libreria poco attiva negli ultimi anni-->
     <PackageReference Include="Serilog" Version="4.3.0" />
 	  <!--logging strutturato. standart enterprise-->
     <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
-	  <!--x integrare Serilog con ASP.NET Core, middleware automatico, request logging-->
+	  <!--integra Serilog con ASP.NET Core e Generic Host; supporta request logging tramite middleware dedicato-->
     <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="8.2.2" />
 	  <!--x scrivere log su SQL Server-->
     <PackageReference Include="Serilog.Sinks.Seq" Version="9.0.0" />

@@ -3,15 +3,15 @@
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>  <!--prj compila in .NET 10-->
     <ImplicitUsings>enable</ImplicitUsings>  <!--non devi scrivere using System, reduce boilerplate-->
-    <Nullable>enable</Nullable>  <!--abilita nullable reference types, evita NullReferenceException-->
+    <Nullable>enable</Nullable>  <!--abilita il controllo statico dei null a compile-time, riducendo il rischio di NullReferenceException-->
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="CsvHelper" Version="33.1.0" />
 	  <!--leggere/scrivere file .csv, mapping auto w objs c#, standart-de-facto x file .csv in .net-->
     <PackageReference Include="EPPlus" Version="8.0.8" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
-	  <!--creare/leggere file Excel (.xlsx), formattazione celle fogli formule-->
+	  <!--sotto LICENZA COMMERCIALE,creare/leggere file Excel (.xlsx), formattazione celle fogli formule-->
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="2.3.0" />
 	  <!--validazioni w data annotations e.g. [Required], [MaxLength], [Range]-->
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
@@ -19,9 +19,9 @@
     <PackageReference Include="Serilog" Version="4.3.0" />
 	  <!--logging strutturato. standart enterprise-->
     <PackageReference Include="Serilog.Extensions.Hosting" Version="9.0.0" />
-	  <!--integra serilog w HostBuilder aspnetcore pipeline-->
+	  <!--integra Serilog con Generic Host (ASP.NET Core, Worker, Console)-->
 	  <PackageReference Include="SerilogTimings" Version="3.1.0" />
-	  <!--x misurare tempo di esecuzione, logging auto delle performances-->
+	  <!--misura la durata di blocchi di codice e logga automaticamente il tempo di esecuzione-->
   </ItemGroup>
 
 </Project>
