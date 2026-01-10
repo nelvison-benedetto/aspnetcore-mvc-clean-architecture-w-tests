@@ -1,6 +1,6 @@
 ﻿using ContractsManager.Core.Domain.Entities;
 using ContractsManager.Core.Domain.RepositoryContracts;
-using ContractsManager.Infrastructure.DbContext;
+using ContractsManager.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
