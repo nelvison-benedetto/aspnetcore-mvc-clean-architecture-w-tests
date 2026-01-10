@@ -7,7 +7,7 @@ using System.Diagnostics.Metrics;
 using System.Reflection.Emit;
 using System.Text;
 
-namespace ContractsManager.Infrastructure.DbContext;
+namespace ContractsManager.Infrastructure.Persistence;
 
 public class ApplicationDbContext : DbContext
 {
